@@ -44,7 +44,7 @@ def calculate_number_items(number_dives):
     how_many = random.randint(1, 15)
     dive_items = how_many * number_dives
     
-    return dive_items
+    return str(dive_items)
 
 
 def create_dive_finds(number_dives):
@@ -55,8 +55,11 @@ def create_dive_finds(number_dives):
     # TODO: Create a message telling a scuba diver what they found by 
     # calling generate_find() and calculate_number_items() and 
     # then composing and returning the message and numbers.
-
-    raise NotImplementedError()
+    if number_dives < 2:
+        return ("In {} dive, you found".format(number_dives) + " " + calculate_number_items(number_dives) + " " + generate_find())
+    else:
+        return ("In {} dives, you found".format(number_dives) + " " + calculate_number_items(number_dives) + " " + generate_find())
+    #raise NotImplementedError()
 
 
 def main():
