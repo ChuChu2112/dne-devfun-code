@@ -43,5 +43,7 @@ with open(os.path.join(here, "interfaces.json")) as file:
 # TODO: Loop through the interfaces in the JSON data and print out each
 # interface's name, ip, and netmask.
 for interface in json_data["ietf-interfaces:interfaces"]["interface"]:
-    print(interface["name"])
-    print(interface["ietf-ip:ipv4"]["address"][0])
+    print(interface["name"], \
+        "\n ip:", interface["ietf-ip:ipv4"]["address"][0]["ip"], \
+        "\n netmask:", interface["ietf-ip:ipv4"]["address"][0]["netmask"])
+    # print(interface["ietf-ip:ipv4"]["address"][0])
