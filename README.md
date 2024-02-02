@@ -31,7 +31,10 @@ These Learning Labs are for public consumption, so you must ensure that you have
 * If you'd like to contribute to an existing lab, refer to [contributing.md](contributing.md).
 * If you're interested in creating a new Cisco DevNet Learning Lab, please contact a DevNet administrator for guidance.
 
-## Contributors
+## Extra Contributors
 
 * Chukwubuikem Echeta
 
+## About the extra contributed code
+[iosxe_data.json](intro-python/parsing-json/iosxe_data.json) is a json data response from Cisco CSR1000v router sandbox to a RESTAPI get request. Its use is basically to learn how to read and extract specific info using python loops and indexes.
+[iosxe_data.py](intro-python/parsing-json/iosxe_data.py) is the python file which manipulates the json file with a similar name
