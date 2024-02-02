@@ -37,4 +37,5 @@ These Learning Labs are for public consumption, so you must ensure that you have
 
 ## About the extra contributed code
 [iosxe_data.json](intro-python/parsing-json/iosxe_data.json) is a json data response from Cisco CSR1000v router sandbox to a RESTAPI get request. Its use is basically to learn how to read and extract specific info using python loops and indexes.
-[iosxe_data.py](intro-python/parsing-json/iosxe_data.py) is the python file which manipulates the json file with a similar name
+[iosxe_data.py](intro-python/parsing-json/iosxe_data.py) is the python file which manipulates the json file with a similar name.
+[while-loop-infinite-loop](while-loops/while-loop-infinite-loop-demo.py) used a combination of try-except-finally exception statements to safely enter and exit an infinite while loop which keeps track of time. Interestingly, it also prints out the last number counted.👍
